@@ -1,0 +1,4 @@
+# GET http://localhost:8888
+
+
+GET http://localhost:8888/awesome-generator?name=manel&isAwesome=false
