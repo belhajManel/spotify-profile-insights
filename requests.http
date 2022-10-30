@@ -1,4 +1,5 @@
 # GET http://localhost:8888
 
 
-GET http://localhost:8888/awesome-generator?name=manel&isAwesome=false
+GET http://localhost:8888/login
+GET http://localhost:8888/callback
