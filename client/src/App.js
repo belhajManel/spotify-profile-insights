@@ -10,6 +10,13 @@ function App() {
     const urlParams = new URLSearchParams(queryString);
     const access_token = urlParams.get('access_token');
     const refresh_token = urlParams.get('refresh_token');
+
+    if (refresh_token) {
+      fetch(`/refresh_token?refresh_token=${refresh_token}`)
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(err));
+    }
   }, [])
 
 
